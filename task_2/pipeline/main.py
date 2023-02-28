@@ -9,7 +9,7 @@ def run():
     
     gcs_filename = "gs://cloud-samples-data/bigquery/sample-transactions/transactions.csv"
     output_filename = "output/results"
-    output_ext = ".jsonl"
+    output_ext = ".jsonl.gz"
     
     with beam.Pipeline(options=options) as p:
         read_gcs = (p | 'read_gcs' >> beam.io.ReadFromText(
