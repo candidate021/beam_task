@@ -21,7 +21,9 @@ def run():
         
         write_jsonl = (sum_trans_by_date | 'write_jsonl' >> beam.io.WriteToText(
                                         file_path_prefix=output_filename,
-                                        file_name_suffix=output_ext
+                                        file_name_suffix=output_ext,
+                                        num_shards=1,
+                                        shard_name_template=""
                                         ))
         
 
