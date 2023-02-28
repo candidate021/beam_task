@@ -22,6 +22,8 @@ Following up on the same Apache Beam batch job, also do the following
 1. Group all transform steps into a single `Composite Transform`
 1. Add a unit test to the Composite Transform using tooling / libraries provided by Apache Beam
 
+## Solution
+
 **Dependencies**
 
 Apache-beam python sdk is required to execute the pipelines. If not installed, the below command can be run to install the apache-beam package (version 2.45.0 - latest at time of writing).
